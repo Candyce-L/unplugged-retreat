@@ -98,59 +98,62 @@ textarea {
    ========================================================================== */
 
 /* General Styles */
- 
+
 html {
 	font-size: 16px;
 }
- 
+
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
   text-align: left;
 }
- 
-ul, 
+
+ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
- 
+
 a {
   color: #e2e3ed;
   text-decoration: none;
 }
- 
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
- 
-h3, 
+
+h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.125em;
   margin: 20px 0;
 }
- 
+
 p {
   font-size: .875em;
   line-height: 1.285;
 }
- 
+
 img {
  width: 100%;
 }
- 
+
 figure {
  margin: 0;
 }
- 
+
 address {
  font-style: normal;
 }
- 
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -188,7 +191,7 @@ header figure {
 }
 
 .header-divider {
-  background: #3a3a3a; 
+  background: #3a3a3a;
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
@@ -240,39 +243,29 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
   margin: 20px 0;
 }
 
-/*************************ABOUT STYLES************************/
-.map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 80%; 
-    overflow: hidden;
-    position: relative;
-}
- 
-.map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-}
-
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/jake-melara-30679-unsplash.jpg);
+  background: url(../img/unplugged-retreat.jpg);
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -283,9 +276,9 @@ footer .copyright {
 
 .hero-area h1 {
   font-size: 2.25em;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
-  font-weight: 500; 
-  line-height: 1.2; 
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -298,7 +291,7 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .form{
+aside .form {
   margin-top: 30px;
 }
 
@@ -327,7 +320,7 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -351,15 +344,14 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 
 .features p {
   text-align: center;
   margin: 0;
-}
-
-.features i {
-	font-size: 3.75em;
-        margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -393,6 +385,22 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .contact-section {
   background-color: #2a423a;
   display: flex;
@@ -404,7 +412,6 @@ input[type=button] {
 .contact-content p {
   margin: 0;
 }
-
 
 /* ==========================================================================
    FAQ Page
@@ -429,6 +436,10 @@ input[type=button] {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 .faq-content {
@@ -536,7 +547,7 @@ input[type=button] {
     max-width: 640px;
     margin: 100px 0;
   }
-      
+
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
@@ -612,9 +623,13 @@ input[type=button] {
     flex-flow: column wrap;
     flex-basis: 50%;
   }
-  
+
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -662,6 +677,11 @@ input[type=button] {
       line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -680,12 +700,10 @@ input[type=button] {
   .mission-content p {
     width: 45%;
   }
-    
- .map figure {
-    padding-bottom: 45.5%; 
-    
-}
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -730,10 +748,6 @@ input[type=button] {
   header {
     padding: 15px 0;
   }
-  
-  .hero-area {
-    min-height: 775px;
-  }
 
   .content-wrapper {
     max-width: 960px;
@@ -752,11 +766,12 @@ input[type=button] {
       font-size: 1.125em;
       line-height: 1.333;
   }
+
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
-}
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -774,7 +789,6 @@ input[type=button] {
 
   /* Features */
 
-
   .features h2 {
     width: 90%;
   }
@@ -782,14 +796,15 @@ input[type=button] {
   .features article {
     flex-basis: 33%;
   }
-  
+
   /* Reviews */
-  .reviews article div {
-    width: 42%;
-  }
 
   .reviews h2 {
     padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
   }
 
   footer h4 {
@@ -799,17 +814,15 @@ input[type=button] {
   /* ==========================================================================
   About Page
   ========================================================================== */
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
       font-size: 3em;
   }
-    
-    .map figure {
-    padding-bottom: 37.5%; 
-    
-}
 
   .contact-content h4 {
     font-size: 1.875em;
@@ -822,7 +835,7 @@ input[type=button] {
     width: 100%;
     font-size: 3em;
   }
-    
+
   .faq h4,
   .faq p {
       font-size: 1.125em;
